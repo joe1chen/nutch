@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+  <property>
+    <name>http.agent.name</name>
+    <value>MyCrawler</value>
+  </property>
+
+  <property>
+    <name>http.robots.agents</name>
+    <value>MyCrawler,*</value>
+    <description>The agent strings we'll look for in robots.txt files,
+    comma-separated, in decreasing order of precedence. You should
+    put the value of http.agent.name as the first agent name, and keep the
+    default * at the end of the list. E.g.: BlurflDev,Blurfl,*
+    </description>
+  </property>
+
+  <property>
+    <name>http.agent.description</name>
+    <value>Crawler for MyWebsite.com</value>
+  </property>
+
+  <property>
+    <name>http.agent.url</name>
+    <value>http://www.mywebsite.com/</value>
+  </property>
+
+  <property>
+    <name>http.agent.email</name>
+    <value>crawler@mywebsite.com</value>
+  </property>
+
+</configuration>
