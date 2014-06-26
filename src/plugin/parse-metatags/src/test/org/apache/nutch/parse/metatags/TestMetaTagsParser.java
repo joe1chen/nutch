@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.apache.nutch.parse;
+package org.apache.nutch.parse.metatags;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
@@ -26,6 +26,7 @@ import org.apache.html.dom.HTMLDocumentImpl;
 import org.apache.nutch.parse.HTMLMetaTags;
 import org.apache.nutch.parse.Parse;
 import org.apache.nutch.parse.ParseUtil;
+import org.apache.nutch.parse.metatags.MetaTagsParser;
 import org.apache.nutch.storage.WebPage;
 import org.apache.nutch.util.Bytes;
 import org.apache.nutch.util.NutchConfiguration;
@@ -76,7 +77,7 @@ public class TestMetaTagsParser {
       in.readFully(bytes);
       in.close();
 
-      WebPage page = new WebPage();
+      WebPage page = WebPage.newBuilder().build();
       page.setBaseUrl(new Utf8(urlString));
       page.setContent(ByteBuffer.wrap(bytes));
       page.setContentType(new Utf8("text/html"));

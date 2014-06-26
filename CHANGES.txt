@@ -2,6 +2,26 @@ Nutch Change Log
 
 Current Development
 
+* NUTCH-1769 REST API refactoring (Fjodor Vershinin via lewismc)
+
+* NUTCH-1633 slf4j is provided by hadoop and should not be included in the job file (kaveh minooie via jnioche)
+
+* NUTCH-1787 update and complete API doc overview page (snagel)
+
+* NUTCH-1767 remove special treatment of "params" in relative links (snagel)
+
+* NUTCH-1718 redefine http.robots.agent as "additional agent names" (snagel, Tejas Patil, Daniel Kugel)
+
+* NUTCH-1796 Ensure Gora object builders are used as oppose to empty constructors (snagel via lewismc)
+
+* NUTCH-1590 [SECURITY] Frame injection vulnerability in published Javadoc (jnioche)
+
+* NUTCH-1736 Can't fetch page if http response header contains Transfer-Encoding：chunked (ysc via jnioche)
+
+* NUTCH-1782 NodeWalker to return current node (markus)
+
+* NUTCH-1781 Update gora-*-mapping.xml and gora.proeprties to reflect Gora 0.4 (lewismc)
+
 * NUTCH-1768 Upgrade to ElasticSearch 1.1.0 (jnioche)
 
 * NUTCH-1634 readdb -stats shows the result twice (kaveh minooie via jnioche)
