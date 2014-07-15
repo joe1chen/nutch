@@ -2,6 +2,18 @@ Nutch Change Log
 
 Current Development
 
+* NUTCH-1811 bin/nutch junit to use junit 4 test runner (snagel)
+
+* NUTCH-1776 Log incorrect plugin.folder file path (Diaa via snagel)
+
+* NUTCH-1566 bin/nutch to allow whitespace in paths (tejasp, snagel)
+
+* NUTCH-1605 MIME type detector recognizes xlsx as zip file (snagel)
+
+* NUTCH-385 Improve description of thread related configuration for Fetcher (jnioche,lufeng)
+
+* NUTCH-1798 Crawl script not calling index command correctly (Aaron Bedward via jnioche)
+
 * NUTCH-1769 REST API refactoring (Fjodor Vershinin via lewismc)
 
 * NUTCH-1633 slf4j is provided by hadoop and should not be included in the job file (kaveh minooie via jnioche)
