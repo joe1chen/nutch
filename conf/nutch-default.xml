@@ -1276,7 +1276,10 @@
     Gora class for storing data in Apache Avro. DataFileAvroStore is 
     a file based store which uses Avro's DataFile{Writer,Reader}'s as a backend.
     This datastore supports mapreduce.
-    
+
+  org.apache.gora.mongodb.store.MongoStore
+    Gora class for storing data in 10gen MongoDB.
+
   org.apache.gora.memory.store.MemStore
     Gora class for storing data in a Memory based implementation for tests.
   </description>
