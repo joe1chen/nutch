@@ -98,10 +98,10 @@
     </description>
   </property>
 
-  <!-- HBase -->
+  <!-- MongoDB -->
   <property>
    <name>storage.data.store.class</name>
-   <value>org.apache.gora.hbase.store.HBaseStore</value>
+   <value>org.apache.gora.mongodb.store.MongoStore</value>
    <description>Default class for storing data</description>
   </property>
 
