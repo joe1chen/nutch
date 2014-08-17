@@ -70,6 +70,8 @@
     <dependency org="com.google.guava" name="guava" rev="11.0.2" />
     <dependency org="com.google.code.crawler-commons" name="crawler-commons" rev="0.4" />
 
+	<dependency org="org.apache.avro" name="avro" rev="1.7.6" />
+	
     <!--Configuration: test -->
 
     <!--artifacts needed for testing -->
@@ -114,7 +116,9 @@
     <dependency org="mysql" name="mysql-connector-java" rev="5.1.18" conf="*->default"/> 
     -->
     <!-- Uncomment this to use HBase as Gora backend. -->
+    <!--
     <dependency org="org.apache.gora" name="gora-hbase" rev="0.4" conf="*->default" />
+    -->
     <!-- Uncomment this to use Accumulo as Gora backend. -->
     <!--
     <dependency org="org.apache.gora" name="gora-accumulo" rev="0.4" conf="*->default" />
@@ -124,9 +128,7 @@
     <dependency org="org.apache.gora" name="gora-cassandra" rev="0.4" conf="*->default" />
     -->
     <!-- Uncomment this to use MongoDB as Gora backend. -->
-    <!--
     <dependency org="org.apache.gora" name="gora-mongodb" rev="0.5-SNAPSHOT" conf="*->default" changing="true"/>
-    -->
     
 
     <!--global exclusion -->
