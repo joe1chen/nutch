@@ -141,6 +141,12 @@ if $local; then
   # add plugins to classpath
   if [ -d "$NUTCH_HOME/plugins" ]; then
      CLASSPATH="${NUTCH_HOME}:${CLASSPATH}"
+    
+     # Loop through subdirs of plugins
+     for subdir in $NUTCH_HOME/plugins/*/
+     do
+       CLASSPATH="${CLASSPATH}:$subdir/*";
+     done
   fi
 fi
 
@@ -148,6 +154,8 @@ fi
 if $cygwin; then
   CLASSPATH="`cygpath -p -w "$CLASSPATH"`"
 fi
+
+# echo "Classpath: $CLASSPATH"
 
 # setup 'java.library.path' for native-hadoop code if necessary
 # used only in local mode 
